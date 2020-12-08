@@ -36,25 +36,25 @@ A java Spring Boot API REST to manipulate Users
 [RateLimiter](./src/main/java/com/moimah/ecommerce/utils/ratelimiter/RateLimiter.java) is a custom util created to control the application request during a interval.
 + How to use: 
   -  add properties to [application.properties](./.src/main/resources/application.properties).
-  ```
+```
   ratelimiter.interval=1
   ratelimiter.unit=h
   ratelimiter.capacity=100
-  ```
+```
   This example allows 100 request in 1h. Allows (s, m, h, d).
   
   -  Inject rate limiter in controller:
-  ```
-  @Autowired
-  private RateLimiter rateLimiter;     
-  ```
+```
+@Autowired
+private RateLimiter rateLimiter;     
+```
   
   -  Add this code in the http functions in controller:
-  ```
-    if (!rateLimiter.getBucket().tryConsume(1)) {
-        return new ResponseEntity<>(HttpStatus.TOO_MANY_REQUESTS);
-     }
-   ```
+```
+if (!rateLimiter.getBucket().tryConsume(1)) {
+   return new ResponseEntity<>(HttpStatus.TOO_MANY_REQUESTS);
+}
+```
   It should look like this:
   ![image info](https://i.gyazo.com/f7bb8c08522ba856da3c020f46a76da3.png)
   
@@ -77,23 +77,23 @@ A java Spring Boot API REST to manipulate Users
 - After execute mvn clean install the executables .jar, .war are located in [executables](./target).
 
 ## Deploy on Heroku
-1. Needs a heroku user account. Open terminal in project root.
+1. Needs a heroku user account.
 2. Install [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
-3. Login to heroku, and follow steps.
-    ```
-    heroku login
-    ```
+3. Login to heroku, ppen terminal in project root and follow steps.
+```
+ heroku login
+```
 4. Commit git changes.
 5. Create heroku application.
-   ```
-    heroku apps:create example-unique-name
-    ```
+```
+ heroku apps:create example-unique-name
+```
 6. Push changes to heroku.
-   ```
-    git push heroku master
-    ```
-    if everything was ok, it should show like this
-    ![image info](https://i.gyazo.com/a93e50eb98986f2594da7b213409392f.png)
+ ```
+  git push heroku master
+ ```
+if everything was ok, it should show like this
+![image info](https://i.gyazo.com/a93e50eb98986f2594da7b213409392f.png)
     
 7. Open heroku in your browser
     ```
@@ -104,3 +104,5 @@ A java Spring Boot API REST to manipulate Users
     + [Get all users](https://moimah-test-api.herokuapp.com/user/get)
     + [Get all cities](https://moimah-test-api.herokuapp.com/user/cities)
     + For all other http requests check [controller](./src/main/java/com/moimah/ecommerce/controller/UserController.java)
+- Click to launch [Production UI](https://moimah-test-front.herokuapp.com/), click to open [UI repository](https://moimah-test-front.herokuapp.com/) 
+![image info](https://i.gyazo.com/b4efa36ee6728c3579ce2b2fb12fb038.png)
