@@ -14,7 +14,7 @@ A java Spring Boot API REST to manipulate Users
  - Include database [dump](./etc/database_dump/database.sql). 
  
 ## MainClass:
- - The main class is located on src/main/java/com/moimah/ecommerce/EcommerceApplication.java
+ - The main class is located on [Application.java](.src/main/java/com/moimah/testapi/Application.java).
  
 ## Requeriments:
 - JDK 1.8.
@@ -79,7 +79,7 @@ if (!rateLimiter.getBucket().tryConsume(1)) {
 ## Deploy on Heroku
 1. Needs a heroku user account.
 2. Install [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
-3. Login to heroku, ppen terminal in project root and follow steps.
+3. Login to heroku, open terminal in project root and follow steps.
 ```
  heroku login
 ```
