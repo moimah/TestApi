@@ -8,7 +8,7 @@ import javax.persistence.*;
  * Tb01User JPA Entity
  */
 @Entity
-@Table(name = "tb01_user", catalog = "db_test_api")
+@Table(name = "tb01_user")
 public class Tb01User implements java.io.Serializable {
 
 	private Long tb01UserId;
