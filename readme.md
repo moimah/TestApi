@@ -23,6 +23,7 @@ A java Spring Boot API REST to manipulate Users
 
 ## Architecture
 - The API use MVC patron, the packages are organizated:
+
 ![image info](https://i.gyazo.com/8724dfc43a2af3e2dc0a95a46b29a2c8.png)
  * [entity](./src/main/java/com/moimah/ecommerce/entity): Contains the JPA/Hibernate entitie.
  * [dto](./src/main/java/com/moimah/ecommerce/dto): Contains data transfer objects to manipulate entities.
@@ -75,3 +76,31 @@ A java Spring Boot API REST to manipulate Users
 ## Executable files
 - After execute mvn clean install the executables .jar, .war are located in [executables](./target).
 
+## Deploy on Heroku
+1. Needs a heroku user account. Open terminal in project root.
+2. Install [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
+3. Login to heroku, and follow steps.
+    ```
+    heroku login
+    ```
+4. Commit git changes.
+5. Create heroku application.
+   ```
+    heroku apps:create example-unique-name
+    ```
+6. Push changes to heroku.
+   ```
+    git push heroku master
+    ```
+    if everything was ok, it should show like this
+    ![image info](https://i.gyazo.com/a93e50eb98986f2594da7b213409392f.png)
+    
+7. Open heroku in your browser
+    ```
+    heroku open
+    ```
+## Test API
+- Currently the API is deployed in heroku at the following link [web-app](https://moimah-test-api.herokuapp.com/). Examples:
+    + [Get all users](https://moimah-test-api.herokuapp.com/user/get)
+    + [Get all cities](https://moimah-test-api.herokuapp.com/user/cities)
+    + For all other http requests check [controller](./src/main/java/com/moimah/ecommerce/controller/UserController.java)

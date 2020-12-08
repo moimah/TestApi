@@ -33,7 +33,7 @@ import java.util.Map;
  */
 @SuppressWarnings("all")
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequestMapping(path = "user")
 public class UserController {
 
