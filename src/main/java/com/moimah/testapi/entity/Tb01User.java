@@ -1,4 +1,4 @@
-package com.moimah.ecommerce.entity;
+package com.moimah.testapi.entity;
 
 
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.moimah.ecommerce.utils;
+package com.moimah.testapi.utils;
 
 import org.springframework.data.domain.Sort;
 

@@ -25,15 +25,15 @@ A java Spring Boot API REST to manipulate Users
 - The API use MVC patron, the packages are organizated:
 
 ![image info](https://i.gyazo.com/8724dfc43a2af3e2dc0a95a46b29a2c8.png)
- * [entity](./src/main/java/com/moimah/ecommerce/entity): Contains the JPA/Hibernate entitie.
- * [dto](./src/main/java/com/moimah/ecommerce/dto): Contains data transfer objects to manipulate entities.
- * [repository](./src/main/java/com/moimah/ecommerce/repository): Contains JpaRepositories interfaces for each entity.
- * [controller](./src/main/java/com/moimah/ecommerce/controller): Contains the business logic and http actions to manipulate entity repositories.
- * [utils](./src/main/java/com/moimah/ecommerce/utils): Contains custom utils used in the application.
+ * [entity](src/main/java/com/moimah/testapi/entity): Contains the JPA/Hibernate entitie.
+ * [dto](src/main/java/com/moimah/testapi/dto): Contains data transfer objects to manipulate entities.
+ * [repository](src/main/java/com/moimah/testapi/repository): Contains JpaRepositories interfaces for each entity.
+ * [controller](src/main/java/com/moimah/testapi/controller): Contains the business logic and http actions to manipulate entity repositories.
+ * [utils](src/main/java/com/moimah/testapi/utils): Contains custom utils used in the application.
  * [application.properties](./.src/main/resources/application.properties): File that content spring properties, and others properties used in the app.
 
 #### Rate limiter
-[RateLimiter](./src/main/java/com/moimah/ecommerce/utils/ratelimiter/RateLimiter.java) is a custom util created to control the application request during a interval.
+[RateLimiter](src/main/java/com/moimah/testapi/utils/ratelimiter/RateLimiter.java) is a custom util created to control the application request during a interval.
 + How to use: 
   -  add properties to [application.properties](./.src/main/resources/application.properties).
 ```
@@ -103,6 +103,6 @@ if everything was ok, it should show like this
 - Currently the API is deployed in heroku at the following link [web-app](https://moimah-test-api.herokuapp.com/). Examples:
     + [Get all users](https://moimah-test-api.herokuapp.com/user/get)
     + [Get all cities](https://moimah-test-api.herokuapp.com/user/cities)
-    + For all other http requests check [controller](./src/main/java/com/moimah/ecommerce/controller/UserController.java)
+    + For all other http requests check [controller](src/main/java/com/moimah/testapi/controller/UserController.java)
 - Click to launch [Production UI](https://moimah-test-front.herokuapp.com/), click to open [UI repository](https://moimah-test-front.herokuapp.com/) 
 ![image info](https://i.gyazo.com/b4efa36ee6728c3579ce2b2fb12fb038.png)

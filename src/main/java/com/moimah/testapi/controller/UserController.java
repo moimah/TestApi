@@ -1,12 +1,12 @@
-package com.moimah.ecommerce.controller;
+package com.moimah.testapi.controller;
 
-import com.moimah.ecommerce.dto.Tb01UserDto;
-import com.moimah.ecommerce.entity.QTb01User;
-import com.moimah.ecommerce.entity.Tb01User;
-import com.moimah.ecommerce.repository.UserRepository;
-import com.moimah.ecommerce.utils.SortDirecction;
-import com.moimah.ecommerce.utils.exceptions.NotFoundException;
-import com.moimah.ecommerce.utils.ratelimiter.RateLimiter;
+import com.moimah.testapi.dto.Tb01UserDto;
+import com.moimah.testapi.entity.QTb01User;
+import com.moimah.testapi.entity.Tb01User;
+import com.moimah.testapi.repository.UserRepository;
+import com.moimah.testapi.utils.SortDirecction;
+import com.moimah.testapi.utils.exceptions.NotFoundException;
+import com.moimah.testapi.utils.ratelimiter.RateLimiter;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.Predicate;
 import org.apache.commons.lang3.BooleanUtils;

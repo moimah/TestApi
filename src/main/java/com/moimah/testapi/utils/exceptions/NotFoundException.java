@@ -1,4 +1,4 @@
-package com.moimah.ecommerce.utils.exceptions;
+package com.moimah.testapi.utils.exceptions;
 
 /**
  * Custom NotFoundException

@@ -1,4 +1,4 @@
-package com.moimah.ecommerce;
+package com.moimah.testapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

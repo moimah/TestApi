@@ -1,4 +1,4 @@
-package com.moimah.ecommerce.dto;
+package com.moimah.testapi.dto;
 
 import java.io.Serializable;
 import java.util.Date;

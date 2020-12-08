@@ -1,7 +1,7 @@
-package com.moimah.ecommerce.repository;
+package com.moimah.testapi.repository;
 
 
-import com.moimah.ecommerce.entity.Tb01User;
+import com.moimah.testapi.entity.Tb01User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 

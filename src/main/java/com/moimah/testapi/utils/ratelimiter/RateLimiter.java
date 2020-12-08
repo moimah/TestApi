@@ -1,4 +1,4 @@
-package com.moimah.ecommerce.utils.ratelimiter;
+package com.moimah.testapi.utils.ratelimiter;
 
 import io.github.bucket4j.Bandwidth;
 import io.github.bucket4j.Bucket;
