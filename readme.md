@@ -104,5 +104,5 @@ if everything was ok, it should show like this
     + [Get all users](https://moimah-test-api.herokuapp.com/user/get)
     + [Get all cities](https://moimah-test-api.herokuapp.com/user/cities)
     + For all other http requests check [controller](src/main/java/com/moimah/testapi/controller/UserController.java)
-- Click to launch [Production UI](https://moimah-test-front.herokuapp.com/), click to open [UI repository](https://moimah-test-front.herokuapp.com/) 
+- Click to launch [Production UI](https://moimah-test-front.herokuapp.com/), click to open [UI repository](https://github.com/moimah/TestApiFront) 
 ![image info](https://i.gyazo.com/b4efa36ee6728c3579ce2b2fb12fb038.png)
